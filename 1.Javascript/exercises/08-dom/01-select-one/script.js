@@ -11,4 +11,10 @@
 
 (() => {
     // your code here
+    var p = document.getElementById("target");
+    p.innerHTML = 'owned'
+   
+
+
+
 })();

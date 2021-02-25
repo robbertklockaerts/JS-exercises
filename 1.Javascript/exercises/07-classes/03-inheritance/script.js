@@ -10,10 +10,39 @@
 // You will have time to focus on it later.
 
 (() => {
+
+
     class Animal {
         sayHello() {
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
-    // your code here
+
+    class Cat extends Animal {
+        constructor(name) {
+            super();
+           this.name = name;
+        }
+        
+     static greeting ='miauwkes'
+    }
+
+    class Dog extends Animal {
+         constructor(name) {
+             super();
+           this.name = name;
+         }
+        static greeting = 'woef'
+    }
+    
+    document.getElementById("run").addEventListener("click", () => {
+
+
+    var cat = new Cat("sizzles")
+    console.log(cat.sayHello());
+    
+   //https://www.codegrepper.com/code-examples/javascript/javascript+class+with+statis
+})();
+
+
 })();
